@@ -4,8 +4,11 @@ pub fn add(a: i32, b: i32) -> i32 {
 
 #[cfg(test)]
 mod test{
+    use crate::add;
+
     #[test]
     fn it_works() {
-        assert_eq!(2 + 2, 4);
+        let result = add(1, 2);
+        assert_eq!(result, 3);
     }
 }
